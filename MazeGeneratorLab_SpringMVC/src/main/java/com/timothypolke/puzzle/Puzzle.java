@@ -128,7 +128,7 @@ public class Puzzle extends BufferedImage{
 	}
 	
 	public void chooseDirection(int posX,int posY,ArrayList<Block> visitedCells,ArrayList<Integer> uncheckedDirections){
-		Random rand=new Random();
+		Random rand=new SecureRandom();
 		int direction=0;
 		int xChange=0;
 		int yChange=0;
