@@ -9,7 +9,6 @@ import java.awt.Graphics2D;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Base64;
-import java.util.Random;
 
 public class Puzzle extends BufferedImage{
 	private int xCells=0;
@@ -128,7 +127,7 @@ public class Puzzle extends BufferedImage{
 	}
 	
 	public void chooseDirection(int posX,int posY,ArrayList<Block> visitedCells,ArrayList<Integer> uncheckedDirections){
-		Random rand=new Random();
+		SecureRandom rand=new SecureRandom();
 		int direction=0;
 		int xChange=0;
 		int yChange=0;
